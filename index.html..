@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Criador de Personagem</title>
+</head>
+
+<body>
+
+<h1>Criador de Personagem</h1>
+
+<button onclick="criar()">Criar Personagem</button>
+
+<p id="personagem"></p>
+
+<script>
+function criar() {
+
+let personagens = [
+"Anime Guerreiro",
+"Robô do Futuro",
+"Cavaleiro Fantasia",
+"Criatura de Terror",
+"Mago 3D"
+]
+
+let sorteio = personagens[Math.floor(Math.random()*personagens.length)]
+
+document.getElementById("personagem").innerText = sorteio
+
+}
+</script>
+
+</body>
+</html>
